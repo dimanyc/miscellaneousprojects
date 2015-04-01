@@ -3,6 +3,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 *{overflow: hidden;}
+header
+{
+  
+}
+
 body
 {
   @include outer-container;
@@ -17,6 +22,13 @@ body
     background-position: center;
   }
 
+  header
+  {
+    @include outer-container(100%);
+    background-color: #808080;
+    overflow: visible!important;
+  }
+
   h1,h2
   {
     font-family: 'Playfair Display', serif;
@@ -27,3 +39,5 @@ body
     @include span-columns(1);
   }
 }
+
+
