@@ -2,42 +2,56 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-*{overflow: hidden;}
+body.index{background-image:image-url("arnica-background-1.jpg");background-size:cover;}
 header
 {
-  
+  background-color: $transparent_white;
+  border-top:60px #58595b outset;
 }
+.wrapper{@include outer-container;}
+h1,h2{font-family: 'Playfair Display', serif; font-style: italic;font-size:21px;}
+p{@include span-columns(1);}
+// header
+// {
+//   background-color: red;
+//   position: absolute;
+//   width: 100%;
+//   left: 0;
+//   .wrapper
+//   {
+//     position: relative;
+//     background-color: red;
+//   }
+// }
+// body
+// {
+//   font-family: 'Open Sans', sans-serif;
+//   @include outer-container;
+//   h1,h2{font-family: 'Playfair Display', serif;}
 
-body
-{
-  @include outer-container;
-  font-family: 'Open Sans', sans-serif;
+// }
+      
+// .wrapper
+// {
   
-  .container
-  {
-    @include span-columns(12);
-    border-left:1px inset red;
-    border-right:1px inset red;
-    background-image: url('grid.png');
-    background-position: center;
-  }
+//   @include span-columns(12);
+//   border-left:1px inset red;
+//   border-right:1px inset red;
+//   background-image: url('grid.png');
+//   background-position: center;
+//   position: relative;
+  
+//   p
+//   {
+//     @include span-columns(1);
+//     overflow: hidden;
+//   }
 
-  header
-  {
-    @include outer-container(100%);
-    background-color: #808080;
-    overflow: visible!important;
-  }
+// }
 
-  h1,h2
-  {
-    font-family: 'Playfair Display', serif;
-  }
 
-  p
-  {
-    @include span-columns(1);
-  }
-}
+
+
+
 
 

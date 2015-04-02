@@ -8,7 +8,8 @@ html
   = javascript_include_tag "application", "data-turbolinks-track" => true
   = csrf_meta_tags
 
-  body
+  body class="#{controller.action_name}"
     header
-      h1 test
+      .wrapper
+        h1 Miscelaneious Projects
     == yield

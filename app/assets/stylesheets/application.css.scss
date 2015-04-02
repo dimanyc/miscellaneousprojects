@@ -13,16 +13,11 @@
  *= require_self
  */
 
-// @import "bourbon";
-// @import "neat";
-// //@import "grid-settings";
-// @import url(http://fonts.googleapis.com/css?family=Playfair+Display:400italic|Open+Sans:400,300);
-// @import "home";
-
-
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css");
 @import "bourbon";
 @import "grid-settings";
 @import "neat";
-@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400italic|Open+Sans:400,300);
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400|Playfair+Display:400italic);
+@import "colors";
 @import "home";
 
