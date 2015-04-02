@@ -2,52 +2,55 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body.index{background-image:image-url("arnica-background-1.jpg");background-size:cover;}
+body.index
+{
+  background-image:image-url("arnica-background-1.jpg");
+  background-size:cover;
+  font-family:$lato;
+  //-webkit-font-smoothing: antialiased;
+}
+
 header
 {
   background-color: $transparent_white;
+  height:135px;
   border-top:60px #58595b outset;
+  padding-top: 20px;
+  .wrapper{display:table;width: 100%;}
+    h1
+    {
+      color:$grey;
+      font-style: italic;
+      font-size:21px;
+      font-weight:700;
+      display:table-cell;
+
+    }
+  
+    form
+    {
+
+        label
+        {
+          font-family:$playfair;
+          font-style: italic;
+          font-weight:normal;
+          color: $light_grey;          
+          font-size:12px;
+        }
+    }
 }
+
 .wrapper{@include outer-container;}
-h1,h2{font-family: 'Playfair Display', serif; font-style: italic;font-size:21px;}
-p{@include span-columns(1);}
-// header
-// {
-//   background-color: red;
-//   position: absolute;
-//   width: 100%;
-//   left: 0;
-//   .wrapper
-//   {
-//     position: relative;
-//     background-color: red;
-//   }
-// }
-// body
-// {
-//   font-family: 'Open Sans', sans-serif;
-//   @include outer-container;
-//   h1,h2{font-family: 'Playfair Display', serif;}
 
-// }
-      
-// .wrapper
-// {
-  
-//   @include span-columns(12);
-//   border-left:1px inset red;
-//   border-right:1px inset red;
-//   background-image: url('grid.png');
-//   background-position: center;
-//   position: relative;
-  
-//   p
-//   {
-//     @include span-columns(1);
-//     overflow: hidden;
-//   }
+h1,h2
+{
+  font-family: 'Playfair Display', serif;
+}
 
-// }
+
+p{@include span-columns(6);}
+
 
 
 

@@ -9,7 +9,10 @@ html
   = csrf_meta_tags
 
   body class="#{controller.action_name}"
-    header
+    header 
       .wrapper
-        h1 Miscelaneious Projects
+        h1 I look awesome in Mozilla
+        = form_for @contact do |f|
+          = f.label "and pretty darn terrible in Chrome"
+          / = f.email_field :email
     == yield

@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
 
   def index
-    @columns = 12
+    @contact = Contact.new
   end
-  
+
 end
