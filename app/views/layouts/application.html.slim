@@ -11,8 +11,10 @@ html
   body class="#{controller.action_name}"
     header 
       .wrapper
-        h1 I look awesome in Mozilla
+        h1 Miscellaneous Projects
         = form_for @contact do |f|
-          = f.label "and pretty darn terrible in Chrome"
-          / = f.email_field :email
+          = f.label "Sign up to hear about new projects: "
+          = f.email_field :email
+          = f.submit ''
     == yield
+  

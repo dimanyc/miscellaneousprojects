@@ -6,49 +6,68 @@ body.index
 {
   background-image:image-url("arnica-background-1.jpg");
   background-size:cover;
-  font-family:$lato;
-  //-webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -webkit-animation-duration: 0.1s;
+  -webkit-animation-name: fontfix;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 0.1s;
+}
+
+@-webkit-keyframes fontfix
+{
+    from{ opacity: 1; }
+    to{ opacity: 1; }
 }
 
 header
 {
   background-color: $transparent_white;
   height:135px;
-  border-top:60px #58595b outset;
+  border-top:60px #58595b solid;
+  border-color:rgba(88,89,91,1)!important;
   padding-top: 20px;
   .wrapper{display:table;width: 100%;}
     h1
     {
       color:$grey;
       font-style: italic;
-      font-size:21px;
+      font-size:21pt;
       font-weight:700;
       display:table-cell;
-
     }
   
     form
     {
-
-        label
-        {
-          font-family:$playfair;
-          font-style: italic;
-          font-weight:normal;
-          color: $light_grey;          
-          font-size:12px;
-        }
+      text-align: right;
+      label
+      {
+        font-family:$genath;
+        font-style: italic;
+        font-weight:bold;
+        color: $grey;          
+        font-size:12pt;
+      }
+      input
+      {
+        border:0;
+        border-bottom:1px solid $light_grey;
+        background-color:rgba(88,89,91,0)
+      }
+      input[type="submit"]
+      {
+        border:none;
+        // color:$light_grey;
+        background-image:image-url("carret-right.svg");
+        background-repeat:no-repeat;
+        background-position: bottom center;
+      }
     }
 }
 
 .wrapper{@include outer-container;}
 
-h1,h2
-{
-  font-family: 'Playfair Display', serif;
-}
-
-
+h1,h2{font-family: $genath!important;}
 p{@include span-columns(6);}
 
 
