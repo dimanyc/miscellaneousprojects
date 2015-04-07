@@ -4,22 +4,23 @@
 
 section.body
 {
-  margin-top:40px;
+  margin-top:15px;
   @include span-columns(12);
-  a{text-decoration: none;color:$black;@include span-columns(6);min-height:215px;}
+  a{text-decoration: none;color:$black;@include span-columns(6);min-height:215px;margin-top: 65px;}
   a:nth-child(1),a:nth-child(2){margin-bottom:10px;}
   a:nth-child(2){@include omega();}
   h2
   {
-    margin-top: 0;
+    margin-top: -66px;
     padding-left:20px;
-    padding-top:14px;
+    padding-top:16px;
     padding-bottom:14px;
     background-color: $transparent_white;
     font-size:27px;
+    display: block;
   }
 
-  a:nth-child(1){background-image: image-url("product-design-and-creation.png");}
+  a:nth-child(1){background-image: image-url("product-design-and-creation_.png");}
   a:nth-child(2){background-image: image-url("identity-design.png");}
   a:nth-child(3){background-image: image-url("graphic-design.png");}    
   a:nth-child(4){background-image: image-url("web-design-and-development.png");}  
