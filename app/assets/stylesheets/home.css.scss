@@ -2,74 +2,21 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-body.index
+section.body
 {
-  background-image:image-url("arnica-background-1.jpg");
-  background-size:cover;
-  -webkit-font-smoothing: antialiased;
-  -webkit-animation-duration: 0.1s;
-  -webkit-animation-name: fontfix;
-  -webkit-animation-iteration-count: 1;
-  -webkit-animation-timing-function: linear;
-  -webkit-animation-delay: 0.1s;
+  margin-top:40px;
+  @include span-columns(12);
+  #product-design,#identity-and-branding,#graphic-design,#web-design{@include span-columns(6);}
+  #identity-and-branding{@include omega();}  
+  #product-design
+  {
+    background-image: image-url("product-design-and-creation.png");    
+  }
+
+ 
 }
 
-@-webkit-keyframes fontfix
-{
-    from{ opacity: 1; }
-    to{ opacity: 1; }
-}
 
-header
-{
-  background-color: $transparent_white;
-  height:135px;
-  border-top:60px #58595b solid;
-  border-color:rgba(88,89,91,1)!important;
-  padding-top: 20px;
-  .wrapper{display:table;width: 100%;}
-    h1
-    {
-      color:$grey;
-      font-style: italic;
-      font-size:21pt;
-      font-weight:700;
-      display:table-cell;
-      font-family: $genath;
-    }
-  
-    form
-    {
-      text-align: right;
-      label
-      {
-        font-family:$genath;
-        font-style: italic;
-        font-weight:bold;
-        color: $grey;          
-        font-size:12pt;
-      }
-      input
-      {
-        border:0;
-        border-bottom:1px solid $light_grey;
-        background-color:rgba(88,89,91,0)
-      }
-      input[type="submit"]
-      {
-        border:none;
-        // color:$light_grey;
-        background-image:image-url("carret-right.svg");
-        background-repeat:no-repeat;
-        background-position: bottom center;
-      }
-    }
-}
-
-.wrapper{@include outer-container;}
-
-h1,h2{font-family: $genath!important;}
-p{@include span-columns(6);}
 
 
 

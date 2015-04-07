@@ -14,7 +14,7 @@ html
         h1 Miscellaneous Projects 
         = form_for @contact do |f|
           = f.label "Sign up to hear about new projects: "
-          = f.email_field :email
+          = f.email_field :email, placeholder: "email"
           = f.submit ''
     == yield
   

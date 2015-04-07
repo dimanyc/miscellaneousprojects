@@ -21,3 +21,63 @@
 @import "font-faces";
 @import "home";
 
+body.index
+{
+  background-image:image-url("arnica-background-1.jpg");
+  background-size:cover;
+  font-family: $gill;
+  font-weight: 100;
+
+}
+
+header
+{
+  background-color: $transparent_white;
+  height:135px;
+  border-top:60px #58595b solid;
+  padding-top: 13px;
+
+    h1
+    {
+      color:$black;
+      font-size:21pt;
+      font-weight:normal;
+      display:table-cell;
+      font-family: $genath_regular;
+      overflow: hidden;
+
+    }
+  
+    form
+    {
+      text-align: right;
+      label
+      {
+        font-family:$genath_light;
+        font-weight:normal;
+        color: $grey;          
+        font-size:12pt;
+      }
+      input
+      {
+        border:0;
+        border-bottom:1px solid $light_grey;
+        background-color:rgba(88,89,91,0);
+        font-family: $gill;
+        font-size:13px;
+        letter-spacing:0.01em;
+        margin-left:15px;
+      }
+      input[type="submit"]
+      {
+        border:none;
+        background-image:image-url("carret-right.svg");
+        background-repeat:no-repeat;
+        background-position: bottom center;
+      }
+    }
+}
+
+// Positioning 
+.wrapper{@include outer-container;display:table;width: 100%;}
+h1,h2{font-family: $genath_regular;font-weight:normal;font-size:26pt;}
