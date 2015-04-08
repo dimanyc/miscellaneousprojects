@@ -86,7 +86,8 @@ header
 
 footer
 {
-  margin-top:20px;
+  position:absolute;
+  bottom:0;
   background-color: $transparent_white;
   @include span-columns(12); 
   ul

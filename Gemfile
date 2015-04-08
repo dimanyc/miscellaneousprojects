@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails', '4.1.6'
-gem 'sqlite3'
+gem 'pg'
 gem 'sass'
 gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.0.0'
@@ -15,3 +15,7 @@ gem 'slim'
 gem 'storytime'
 gem 'bourbon'
 gem 'neat'
+
+group :production do 
+  gem 'rails_12factor'
+end
