@@ -2,13 +2,19 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+@include hidpi(1.5) {
+  width: 20em;
+}
+section.body:before{display: inline-block;vertical-align: middle;height: 100%;}
 section.body
 {
-  margin-top:15px;
+  margin-top:rem(88); // small screens
   @include span-columns(12);
-  a{text-decoration: none;color:$black;@include span-columns(6);min-height:215px;margin-top: 65px;}
-  a:nth-child(1),a:nth-child(2){margin-bottom:10px;}
+  a{text-decoration: none;color:$black;@include span-columns(6);min-height:215px;margin-top: rem(65);}
+  a:nth-child(1),a:nth-child(2){margin-bottom: rem(10);}
   a:nth-child(2){@include omega();}
+
   h2
   {
     margin-top: -66px;
@@ -24,6 +30,16 @@ section.body
   a:nth-child(2){background-image: image-url("identity-design.png");}
   a:nth-child(3){background-image: image-url("graphic-design.png");}    
   a:nth-child(4){background-image: image-url("web-design-and-development.png");}  
+}
+
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1500px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+
+  section.body {margin-top:rem(15)}
+  section.body a {min-height:200px;}
+
 }
 
 

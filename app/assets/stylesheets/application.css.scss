@@ -21,7 +21,10 @@
 @import "font-faces";
 @import "home";
 
-body{padding-bottom: 88px;}
+html{  min-height:100%;
+  height:auto !important;
+  height:100%;}
+
 body.index
 {
   background-image:image-url("arnica-background-1.jpg");
