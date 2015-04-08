@@ -1,7 +1,7 @@
 doctype html
 html
   head
-    title Miscellaneous Projects Inc. | Product design &amp; development
+    title Miscellaneous Projects, llc | Product design &amp; development
     meta name="description" content="Product design &amp; development"
     meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
   = stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true
@@ -11,10 +11,25 @@ html
   body class="#{controller.action_name}"
     header 
       .wrapper
-        h1 Miscellaneous Projects 
+        h1
+          a href="/" Miscellaneous Projects 
+          
         = form_for @contact do |f|
           = f.label "Sign up to hear about new projects: "
           = f.email_field :email, placeholder: "email"
           = f.submit ''
     == yield
-  
+    footer
+      .wrapper
+        ul
+          li
+            a href="#" Arnica 
+            | / 
+          li
+            a href="#" About Us
+            | / 
+          li
+            a href="#" Design
+        span 
+          a href="mailto:hello@miscellaneousprojects.com" hello@miscellaneousprojects.com
+          |&copy; 2015 Miscellaneous Projects, llc

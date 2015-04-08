@@ -36,28 +36,30 @@ header
   background-color: $transparent_white;
   height:135px;
   border-top:60px #58595b solid;
-  padding-top: 24px;
-
-    h1
+  padding-top: 9px;
+  h1
+  {
+      display:table-cell;
+      font-family: $genath_regular;
+      overflow: hidden;
+    a
     {
       color:$black;
       font-size:21px;
       font-weight:normal;
-      display:table-cell;
-      font-family: $genath_regular;
-      overflow: hidden;
-
+      text-decoration: none;
     }
+  }
   
     form
     {
       text-align: right;
       label
       {
-        font-family:$genath_light;
+        font-family:$genath_regular;
         font-weight:normal;
         color: $grey;          
-        font-size:12px;
+        font-size:$geneath_light_font_size;
       }
       input
       {
@@ -77,6 +79,57 @@ header
         background-position: center;
       }
     }
+}
+
+footer
+{
+  position: absolute;
+  bottom: 0;
+  background-color: $transparent_white;
+  @include span-columns(12); 
+  ul
+  {
+    @include span-columns(4);
+    list-style-type: none;
+    margin-top:22px;
+    padding-bottom:22px;
+    margin-bottom: 0;
+    li
+    {
+      float:left;
+      font-family: $gill;
+      color: $light_grey;
+      a
+      {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: $genath_regular;
+        color:$black;
+        margin-right:11px;
+      }
+    }
+    li:not(first-child)
+    {
+      margin-left:11px;
+    }
+  }
+
+  span
+  {
+    @include span-columns(4);
+    text-align: center;
+    font-family: $genath_regular;
+    color: $light_grey;
+    font-size:$geneath_light_font_size;
+    margin-top: 10px;
+    a
+    {
+      text-decoration: none;
+      color: $light_grey;
+      display: block;
+      margin-bottom: 12px;
+    }
+  }
 }
 
 // Positioning 
