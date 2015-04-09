@@ -19,20 +19,22 @@
 @import "neat";
 @import "colors";
 @import "font-faces";
-@import "home";
+@import "design";
+@import "about";
 
-html{  min-height:100%;
-  height:auto !important;
-  height:100%;}
-
-body.index
+html
 {
-  background-image:image-url("arnica-background-1.jpg");
+  min-height:100%;
+  height:auto !important;
+  height:100%;
+}
+
+body
+{  
   background-size:cover;
   background-position: left;
   font-family: $gill;
   font-weight: 100;
-
 }
 
 header

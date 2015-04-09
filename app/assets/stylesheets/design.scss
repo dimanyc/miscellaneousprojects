@@ -2,10 +2,9 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+body.design{background-image:image-url("arnica-background-1.jpg");}
 
-@include hidpi(1.5) {
-  width: 20em;
-}
+@include hidpi(1.5) {width: 20em;}
 section.body:before{display: inline-block;vertical-align: middle;height: 100%;}
 section.body
 {
