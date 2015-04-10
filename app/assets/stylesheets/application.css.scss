@@ -35,6 +35,7 @@ body
   background-position: left;
   font-family: $gill;
   font-weight: 100;
+   @include hidpi(1.5) {width: 20em;}
 }
 
 header
@@ -91,7 +92,7 @@ header
 
 footer
 {
-  position:absolute;
+  position:fixed;
   bottom:1px;
   background-color: $transparent_white;
   height:60px;
