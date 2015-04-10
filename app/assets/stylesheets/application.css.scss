@@ -21,6 +21,7 @@
 @import "font-faces";
 @import "design";
 @import "about";
+@import "contact";
 
 html
 {
@@ -94,7 +95,8 @@ header
 footer
 {
   position:fixed;
-  bottom:1px;
+  bottom:0px;
+  left:0px;
   background-color: $transparent_white;
   height:60px;
   @include span-columns(12); 
@@ -137,7 +139,7 @@ footer
       text-decoration: none;
       color: $light_grey;
       display: block;
-      margin-bottom: 12px;
+      margin-bottom: 5px;
     }
   }
   input[type="button"]

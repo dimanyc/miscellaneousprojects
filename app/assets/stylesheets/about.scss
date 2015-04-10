@@ -3,20 +3,38 @@ body.about
   background-image:image-url("about-background.png");
   section.body
   {
-    margin-top:rem(20);
-    min-height:rem(828);
+    margin-top:rem(88);
+    min-height:rem(605);
+
+    @media screen 
+    and (min-device-width: 960px) 
+    and (max-device-width: 1500px) 
+    and (-webkit-min-device-pixel-ratio: 1)
+    { 
+
+      min-height:rem(699);margin-top:rem(20);
+
+    }
+
     #featured-project,
     #laura-and-robert,
     #laura-coombs,
     #robert-lee-brackett
     {
-      min-height: rem(390);
+      min-height: rem(352);
       @include span-columns(6);
-      font-size:rem(16);
+      font-size:$gill_light_font_size;
       line-height: rem(19);
       color: $black;
       background-color: $transparent_white;
       padding: rem(0) rem(20) rem(0) rem(20);
+      font-family: $gill_light;
+      @media screen and (-webkit-min-device-pixel-ratio:0)
+      {
+        @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+        font-family: 'Open Sans', sans-serif;
+        font-size: rem(13);
+      }      
       h2
         {
           font-size: rem(26);
@@ -63,7 +81,7 @@ body.about
     #laura-and-robert
     {
       margin-bottom: rem(10);
-      min-height:rem(287);
+      min-height:rem(245);
       h2{@include span-columns(6 of 6);}
       p{@include span-columns(6 of 6);}
       ul
@@ -90,4 +108,7 @@ body.about
     #laura-and-robert{@include omega();}    
   }
 
+
+
+  
 }

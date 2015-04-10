@@ -1,0 +1,40 @@
+body.contact
+{
+  background-image: image-url("arnica-branding-background.png");
+  #contact-form
+  {
+    @include span-columns(7 of 12);
+    background-color:$transparent_white;
+    padding:rem(20);
+    font-family: $gill_light;
+    @media screen and (-webkit-min-device-pixel-ratio:0)
+    {
+      @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+      font-family: 'Open Sans', sans-serif;
+      font-size: rem(13);
+    }     
+    span
+    {
+      display: block;
+      text-align: justify;
+      overflow-x: hidden;
+      b:after
+      {
+        float: left;
+        width: 0;
+        white-space: nowrap;
+        content:
+        "                                        "
+        "                                        "
+        "                                        "
+        "                                        ";
+      }
+      em
+      {
+        float:right;
+        font-style: normal;
+      }
+
+    }
+  } 
+}

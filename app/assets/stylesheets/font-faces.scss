@@ -35,17 +35,28 @@
 
 @font-face {
     font-family: 'gillsans_light';
-    src: asset-url('GillSansMTPro-Light.eot');
+    src: asset-url('GillSansMTPro-Light.svg#gillsans_light') format('svg'),
+         asset-url('GillSansMTPro-Light.eot');
     src: asset-url('GillSansMTPro-Light.eot?#iefix') format('embedded-opentype'),
          asset-url('GillSansMTPro-Light.woff') format('woff'),
-         asset-url('GillSansMTPro-Light.ttf') format('truetype'),
-         asset-url('GillSansMTPro-Light.svg#gillsans_light') format('svg');
+         asset-url('GillSansMTPro-Light.ttf') format('truetype');
+
     font-weight: normal;
     font-style: normal;
 }
 
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+        font-family: 'gillsans_light';
+        src: asset-url('GillSansMTPro-Light.svg#gillsans_light') format('svg');
+
+    }
+}
+
 $genath_regular: 'genathregular_italic';
-$geneath_light_font_size: 14px; //playing around with this
+$geneath_light_font_size: rem(14); //playing around with this
 $genath_light: 'genathlight_italic';
 $gill: 'gillsans';
 $gill_light: 'gillsans_light';
+$gill_light_font_size: rem(14); //playing around with this
