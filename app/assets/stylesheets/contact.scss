@@ -3,6 +3,7 @@ body.contact
   background-image: image-url("arnica-branding-background.png");
   #contact-form
   {
+    h2{margin-top:0;}      
     @include span-columns(7 of 12);
     background-color:$transparent_white;
     padding:rem(20);
@@ -15,7 +16,8 @@ body.contact
     }
     #contact-information
     {
-      @include span-columns(3 of 7);
+      width:rem(210);
+      float:left;
       span
       {
         display: block;
@@ -37,20 +39,24 @@ body.contact
           float:right;
           font-style: normal;
         }
-        form
-        {
-          @include span-columns(3 of 7);
-          overflow: hidden;
-          display: block;
-          margin-left:rem(40);
 
-          input
-          {
-            border:4px black solid;border-color:red;
-            marfin-left:40px;
-          }
-        }
       }
     }
+
+    form
+    {
+      width:rem(250);
+      float:right;
+      #{$all-text-inputs}
+      {
+        border:rem(2) $black solid;
+        padding:rem(2);
+        width:rem(250);
+        color:$light_grey;
+      }
+
+    }
+
   } 
+
 }
