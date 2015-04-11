@@ -1,18 +1,24 @@
 .wrapper
   #contact-form
     h2 Getting in touch is easy
-    span
-      b email
-      em info@miscproj.com
-      br
-    span 
-      b phone 
-      em (217)377-0035
-      br
-    span
-      b form
-      em Just fill out the form
-      br
+    #contact-information
+      span
+        b email
+        em info@miscproj.com
+        br
+      span 
+        b phone 
+        em (217)377-0035
+        br
+      span
+        b form
+        em Just fill out the form
+        br
+    = form_for @contact do |f|
+      = f.text_field :name, placeholder: "name"
+      = f.email_field :email, placeholder: "email"
+      = f.text_area :message, placeholder: "message"
+      = f.submit "Send"  
   #mission-statement
   #inquries
 

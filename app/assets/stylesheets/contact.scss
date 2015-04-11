@@ -12,29 +12,45 @@ body.contact
       @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
       font-family: 'Open Sans', sans-serif;
       font-size: rem(13);
-    }     
-    span
+    }
+    #contact-information
     {
-      display: block;
-      text-align: justify;
-      overflow-x: hidden;
-      b:after
+      @include span-columns(3 of 7);
+      span
       {
-        float: left;
-        width: 0;
-        white-space: nowrap;
-        content:
-        "                                        "
-        "                                        "
-        "                                        "
-        "                                        ";
-      }
-      em
-      {
-        float:right;
-        font-style: normal;
-      }
+        display: block;
+        text-align: justify;
+        overflow-x: hidden;
+        b:after
+        {
+          float: left;
+          width: 0;
+          white-space: nowrap;
+          content:
+          "                                        "
+          "                                        "
+          "                                        "
+          "                                        ";
+        }
+        em
+        {
+          float:right;
+          font-style: normal;
+        }
+        form
+        {
+          @include span-columns(3 of 7);
+          overflow: hidden;
+          display: block;
+          margin-left:rem(40);
 
+          input
+          {
+            border:4px black solid;border-color:red;
+            marfin-left:40px;
+          }
+        }
+      }
     }
   } 
 }
