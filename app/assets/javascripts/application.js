@@ -14,9 +14,3 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
-
-$(document).ready(function() {
-
-  $("#contact-form").animate({left: "0"}, {
-    duration: 2000       
-    });
