@@ -1,14 +1,15 @@
 .wrapper
   #contact-form
-    h2 Getting in touch is easy
     #contact-information
+      h2 Getting in touch is easy
       span
         b email
         em info@miscproj.com
         br
       span 
         b phone 
-        em (217)377-0035
+        em
+          |(217)377-0035
         br
       span
         b form
@@ -20,6 +21,15 @@
       = f.text_area :message, placeholder: "message"
       = f.submit "Send"  
   #mission-statement
+    h2 We came here to do something ...
+    h3 Arnica
+    p A unique collection of intricate organic forms given material life as beautiful human adornments. 
+    p Visit the entire collection at: www.shoparnica.com
+    h4 ...so let's do something
+    input type="button" value="Work with us"
   #inquries
+    h4 Would you like to know more?
+    img src=image_url("mp_icons_question.svg")
+
 
 

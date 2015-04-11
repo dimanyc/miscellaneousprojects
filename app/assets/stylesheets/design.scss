@@ -4,7 +4,7 @@ body.design
 
   section.body
   {
-    margin-top:rem(88); // small screens
+    margin-top:rem(88);
     @include span-columns(12);
     a{text-decoration: none;color:$black;@include span-columns(6);min-height:215px;margin-top: rem(65);}
     a:nth-child(1),a:nth-child(2){margin-bottom: rem(10);}
