@@ -23,40 +23,24 @@
 }
 
 @font-face {
-    font-family: 'gillsans';
-    src: asset-url('GillSansMT.eot');
-    src: asset-url('GillSansMT.eot?#iefix') format('embedded-opentype'),
-         asset-url('GillSansMT.woff') format('woff'),
-         asset-url('GillSansMT.ttf') format('truetype'),
-         asset-url('GillSansMT.svg#gillsans') format('svg');
-    font-weight: normal;
+    font-family:'gillsans_light';
+    src: asset-url('GillSansMTPro-Light_gdi.eot');
+    src: asset-url('GillSansMTPro-Light_gdi.eot?#iefix') format('embedded-opentype'),
+        asset-url('GillSansMTPro-Light_gdi.woff') format('woff'),
+        asset-url('GillSansMTPro-Light_gdi.ttf') format('truetype'),
+        asset-url('GillSansMTPro-Light_gdi.otf') format('opentype'),
+        asset-url('GillSansMTPro-Light_gdi.svg#GillSansMTPro-Light') format('svg');
+    font-weight: 300;
     font-style: normal;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
 }
 
-@font-face {
-    font-family: 'gillsans_light';
-    src: asset-url('GillSansMTPro-Light.svg#gillsans_light') format('svg'),
-         asset-url('GillSansMTPro-Light.eot');
-    src: asset-url('GillSansMTPro-Light.eot?#iefix') format('embedded-opentype'),
-         asset-url('GillSansMTPro-Light.woff') format('woff'),
-         asset-url('GillSansMTPro-Light.ttf') format('truetype');
-
-    font-weight: normal;
-    font-style: normal;
-}
-
-
-@media screen and (-webkit-min-device-pixel-ratio:0) {
-    @font-face {
-        font-family: 'gillsans_light';
-        src: asset-url('GillSansMTPro-Light.svg#gillsans_light') format('svg');
-
-    }
-}
 
 $genath_regular: 'genathregular_italic';
-$geneath_light_font_size: rem(14); //playing around with this
 $genath_light: 'genathlight_italic';
 $gill: 'gillsans';
 $gill_light: 'gillsans_light';
-$gill_light_font_size: rem(14); //playing around with this
+$gill_light_font_size: rem(14); 
+$geneath_light_font_size: rem(14);
+$gill-line-height: rem(18);

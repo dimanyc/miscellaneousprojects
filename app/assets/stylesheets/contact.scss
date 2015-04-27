@@ -1,19 +1,15 @@
-body.contact
+section.contact
 {
   background-image: image-url("arnica-branding-background.png");
+  background-size:cover;
   min-height: rem(830);
   #contact-form, #mission-statement{background-color:$transparent_white;padding:rem(20);}
   #contact-form
   {
     @include span-columns(7 of 12);
     margin-top:rem(130);
+    overflow: visible;
     font-family: $gill_light;
-    @media screen and (-webkit-min-device-pixel-ratio:0)
-    {
-      @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
-      font-family: 'Open Sans', sans-serif;
-      font-size: rem(13);
-    }
     #contact-information
     {
       h2
@@ -28,6 +24,7 @@ body.contact
         display: block;
         text-align: justify;
         overflow-x: hidden;
+        margin-bottom: rem(11);
         b{font-weight:normal;}
         b:after
         {
@@ -76,7 +73,8 @@ body.contact
         height:40px;
         margin-top: rem(15);
         float:right;
-        margin-bottom:rem(10);
+        margin-bottom:rem(9);
+        padding-top: 0px;
       }
     }
 
@@ -87,12 +85,7 @@ body.contact
     @include omega();
     @include shift(1);
     font-family: $gill_light;
-      @media screen and (-webkit-min-device-pixel-ratio:0)
-      {
-        @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
-        font-family: 'Open Sans', sans-serif;
-        font-size: rem(13);
-      }    
+
 
     margin-top:rem(55);
     h2{margin-top:0;}

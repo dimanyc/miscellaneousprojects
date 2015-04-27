@@ -36,8 +36,8 @@ body
   background-size:cover;
   background-position: left;
   font-family: $gill;
-  font-weight: 100;
-   @include hidpi(1.5) {width: 20em;}
+  line-height: $gill-line-height;
+  @include hidpi(1.5) {width: 20em;}
 }
 
 header
@@ -60,36 +60,36 @@ header
     }
   }
   
-    form
+  form
+  {
+    text-align: right;
+    label
     {
-      text-align: right;
-      label
-      {
-        font-family:$genath_regular;
-        font-weight:normal;
-        color: $grey;          
-        font-size:$geneath_light_font_size;
-      }
-      input
-      {
-        border:0;
-        border-bottom:1px solid $light_grey;
-        background-color:rgba(88,89,91,0);
-        font-family: $gill;
-        font-size:12px;
-        font-weight: normal;
-        letter-spacing:0.01em;
-        margin-left:3px;
-      }
-      input[type="submit"]
-      {
-        border:none;
-        background-image:image-url("carret-right.svg");
-        background-repeat:no-repeat;
-        background-position: center;
-        height: 10px;
-      }
+      font-family:$genath_regular;
+      font-weight:normal;
+      color: $grey;          
+      font-size:$geneath_light_font_size;
     }
+    input
+    {
+      border:0;
+      border-bottom:1px solid $light_grey;
+      background-color:rgba(88,89,91,0);
+      font-family: $gill;
+      font-size:12px;
+      font-weight: normal;
+      letter-spacing:0.01em;
+      margin-left:3px;
+    }
+    input[type="submit"]
+    {
+      border:none;
+      background-image:image-url("carret-right.svg");
+      background-repeat:no-repeat;
+      background-position: center;
+      height: 10px;
+    }
+  }
 }
 
 footer
@@ -159,4 +159,4 @@ footer
 
 // Positioning 
 .wrapper{@include outer-container;display:table;width: 100%;}
-h1,h2{font-family: $genath_regular;font-weight:normal;font-size:26pt;}
+h1,h2{font-family: $genath_regular;font-weight:normal;font-size: rem(48);line-height: rem(40);}

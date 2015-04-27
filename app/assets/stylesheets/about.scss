@@ -29,12 +29,7 @@ body.about
       background-color: $transparent_white;
       padding: rem(0) rem(20) rem(0) rem(20);
       font-family: $gill_light;
-      @media screen and (-webkit-min-device-pixel-ratio:0)
-      {
-        @import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
-        font-family: 'Open Sans', sans-serif;
-        font-size: rem(13);
-      }      
+  
       h2
         {
           font-size: rem(26);

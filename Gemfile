@@ -12,7 +12,6 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'normalize-rails'
 gem 'slim'
-#gem 'storytime' // disablign for Heroku deploy
 gem 'bourbon'
 gem 'neat'
 
