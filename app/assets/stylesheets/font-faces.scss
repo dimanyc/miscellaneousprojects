@@ -10,6 +10,21 @@
     font-style: normal;
 }
 
+
+@font-face {
+    font-family:'Genath-BoldIta';
+    src: asset-url('Genath-BoldIta_gdi.eot');
+    src: asset-url('Genath-BoldIta_gdi.eot?#iefix') format('embedded-opentype'),
+        asset-url('Genath-BoldIta_gdi.woff') format('woff'),
+        asset-url('Genath-BoldIta_gdi.ttf') format('truetype'),
+        asset-url('Genath-BoldIta_gdi.otf') format('opentype'),
+        asset-url('Genath-BoldIta_gdi.svg#Genath-BoldIta') format('svg');
+    font-weight: 700;
+    font-style: italic;
+    font-stretch: normal;
+    unicode-range: U+0020-25CA;
+}
+
 @font-face {
     font-family: 'genathlight_italic';
     src: asset-url('Genath-LightIta-webfont.eot');
@@ -37,6 +52,7 @@
 }
 
 
+$genath_bold: 'Genath-BoldIta';
 $genath_regular: 'genathregular_italic';
 $genath_light: 'genathlight_italic';
 $gill: 'gillsans';
