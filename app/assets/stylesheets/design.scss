@@ -1,41 +1,37 @@
-body.design
+section.design
 {
+  top:rem(1860);
   background-image:image-url("arnica-background-1.jpg");
+  padding-top:rem(193);
+  @include span-columns(12);
+  a{text-decoration: none;color:$black;@include span-columns(6);min-height:215px;margin-top: rem(65);}
+  a:nth-child(1),a:nth-child(2){margin-bottom: rem(10);}
+  a:nth-child(2){@include omega();}
 
-  section.body
+  h2
   {
-    margin-top:rem(88);
-    @include span-columns(12);
-    a{text-decoration: none;color:$black;@include span-columns(6);min-height:215px;margin-top: rem(65);}
-    a:nth-child(1),a:nth-child(2){margin-bottom: rem(10);}
-    a:nth-child(2){@include omega();}
-
-    h2
-    {
-      margin-top: -66px;
-      padding-left:20px;
-      padding-top:16px;
-      padding-bottom:14px;
-      background-color: $transparent_white;
-      font-size:27px;
-      display: block;
-    }
-
-    a:nth-child(1){background-image: image-url("product-design-and-creation_.png");}
-    a:nth-child(2){background-image: image-url("identity-design.png");}
-    a:nth-child(3){background-image: image-url("graphic-design.png");}    
-    a:nth-child(4){background-image: image-url("web-design-and-development.png");}  
+    margin-top: -66px;
+    padding-left:20px;
+    padding-top:16px;
+    padding-bottom:14px;
+    background-color: $transparent_white;
+    font-size:27px;
+    display: block;
   }
 
-  @media screen 
-    and (min-device-width: 1200px) 
-    and (max-device-width: 1500px) 
-    and (-webkit-min-device-pixel-ratio: 1) { 
+  a:nth-child(1){background-image: image-url("product-design-and-creation_.png");}
+  a:nth-child(2){background-image: image-url("identity-design.png");}
+  a:nth-child(3){background-image: image-url("graphic-design.png");}    
+  a:nth-child(4){background-image: image-url("web-design-and-development.png");}  
+}
 
-    section.body {margin-top:rem(15)}
-    section.body a {min-height:200px;}
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1500px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
 
-  }
+  section.body {margin-top:rem(15)}
+  section.body a {min-height:200px;}
 
 }
 

@@ -1,109 +1,95 @@
-body.about
+section.about
 {
   background-image:image-url("about-background.png");
-  section.body
+  top:rem(900);
+  padding-top:rem(189);
+  padding-bottom:rem(189+209);
+  height:rem(960);
+
+
+  #featured-project,
+  #laura-and-robert,
+  #laura-coombs,
+  #robert-lee-brackett
   {
-    margin-top:rem(88);
-    min-height:rem(605);
+    min-height: rem(362);
+    @include span-columns(6);
+    font-size:$gill_light_font_size;
+    line-height: rem(19);
+    color: $black;
+    background-color: $transparent_white;
+    padding: rem(0) rem(20) rem(0) rem(20);
+    font-family: $gill_light;
 
-    @media screen 
-    and (min-device-width: 960px) 
-    and (max-device-width: 1500px) 
-    and (-webkit-min-device-pixel-ratio: 1)
-    { 
-
-      min-height:rem(699);margin-top:rem(20);
-
-    }
-
-    #featured-project,
-    #laura-and-robert,
-    #laura-coombs,
-    #robert-lee-brackett
-    {
-      min-height: rem(352);
-      @include span-columns(6);
-      font-size:$gill_light_font_size;
-      line-height: rem(19);
-      color: $black;
-      background-color: $transparent_white;
-      padding: rem(0) rem(20) rem(0) rem(20);
-      font-family: $gill_light;
-  
-      h2
-        {
-          font-size: rem(26);
-          @include span-columns(3 of 6);
-          margin-bottom:rem(14);
-          margin-top: rem(20);
-        }
-      img
+    h2
       {
-        @include span-columns(2 of 6);
-        width: rem(110);
-        height: rem(110);
-        border-radius: 50%;
-        margin-top: rem(28);         
-        padding-right: 0 rem(20) 0 rem(20);
-        margin-right:rem(30);
+        font-size: rem(26);
+        @include span-columns(3 of 6);
+        margin-bottom:rem(-5);
+        margin-top: rem(14);
       }
-      p{@include span-columns(4 of 6);} 
-      ul
-      {
-        list-style-type: none;
-        float:right;
-        margin-top:rem(20);
+    img
+    {
+      @include span-columns(2 of 6);
+      width: rem(110);
+      height: rem(110);
+      border-radius: 50%;
+      margin-top: rem(28);         
+      padding-right: 0 rem(20) 0 rem(20);
+      margin-right:rem(30);
+    }
+    p {@include span-columns(4 of 6);} 
+    ul
+    {
+      list-style-type: none;
+      float:right;
+      margin-top:rem(20);
 
-        li
+      li
+      {
+        float:left;
+        width: rem(30);
+        height: rem(30);
+        margin-right: rem(10);
+
+        a img
         {
-          float:left;
           width: rem(30);
           height: rem(30);
-          margin-right: rem(10);
-
-          a img
-          {
-            width: rem(30);
-            height: rem(30);
-            margin-top:0;
-          }
-        }
-        li:nth-child(4){margin-right:0;}         
-      }     
-    }
-
-    #featured-project,
-    #laura-and-robert
-    {
-      margin-bottom: rem(10);
-      min-height:rem(245);
-      h2{@include span-columns(6 of 6);}
-      p{@include span-columns(6 of 6);}
-      ul
-      {
-        li, li:nth-child(4)
-        {
-          margin-right: rem(10);
-        }
-        li:nth-child(5)
-        {
-          margin-right: 0;
+          margin-top:0;
         }
       }
-
-    }
-    #robert-lee-brackett
+      li:nth-child(4){margin-right:0;}         
+    }     
+  }
+  #featured-project,
+  #laura-and-robert
+  {
+    margin-bottom: rem(10);
+    min-height:rem(245);
+    h2{@include span-columns(6 of 6);}
+    p{@include span-columns(6 of 6);}
+    ul
     {
-      ul{padding-left:0;}
-      ul li, ul li:nth-child(4){margin-right: rem(10);}
-      ul li:nth-child(5){margin-right:0;}
+      li, li:nth-child(4)
+      {
+        margin-right: rem(10);
+      }
+      li:nth-child(5)
+      {
+        margin-right: 0;
+      }
     }
 
-
-    #laura-and-robert{@include omega();}    
+  }
+  #robert-lee-brackett
+  {
+    ul{padding-left:0;}
+    ul li, ul li:nth-child(4){margin-right: rem(10);}
+    ul li:nth-child(5){margin-right:0;}
   }
 
 
+  #laura-and-robert{@include omega();}    
 
-  
 }

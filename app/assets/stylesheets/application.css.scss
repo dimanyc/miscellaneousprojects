@@ -40,12 +40,28 @@ body
   @include hidpi(1.5) {width: 20em;}
 }
 
+section
+{
+
+  background-size:cover;
+  background-position: center center;
+  position:absolute;
+  left:0;  
+  min-width:100%;
+  min-height:100%;  
+  z-index:1;
+
+}
+
 header
 {
   background-color: $transparent_white;
-  height:135px;
-  border-top:60px #58595b solid;
-  padding-top: 9px;
+  height:rem(135);
+  border-top: rem(60) #58595b solid;
+  position:fixed;
+  top:0;
+  width:100%;
+  z-index:2;
   h1
   {
       display:table-cell;
@@ -99,7 +115,9 @@ footer
   left:0px;
   background-color: $transparent_white;
   height:60px;
+  z-index:2;
   @include span-columns(12); 
+  .wrapper{margin-top:0;}
   ul
   {
     @include span-columns(4);
@@ -158,5 +176,5 @@ footer
 }
 
 // Positioning 
-.wrapper{@include outer-container;display:table;width: 100%;}
+.wrapper{@include outer-container;display:table;width: 100%;margin-top: rem(6);}
 h1,h2{font-family: $genath_regular;font-weight:normal;font-size: rem(48);line-height: rem(40);}

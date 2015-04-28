@@ -1,8 +1,11 @@
 section.contact
 {
-  background-image: image-url("arnica-branding-background.png");
-  background-size:cover;
-  min-height: rem(830);
+  background-image: image-url("arnica-products.jpg");
+  top:0;
+  padding-top: rem(155);
+  padding-bottom: rem(190);
+  height:rem(900);
+
   #contact-form, #mission-statement{background-color:$transparent_white;padding:rem(20);}
   #contact-form
   {
@@ -74,7 +77,7 @@ section.contact
         margin-top: rem(15);
         float:right;
         margin-bottom:rem(9);
-        padding-top: 0px;
+        padding-top: 0;
       }
     }
 
@@ -104,7 +107,7 @@ section.contact
       border:0;
       color:white;
       font-size:rem(18);
-      height:40px;
+      height:rem(40);
       width:100%;
       //margin-top: rem(15);
       float:right;
@@ -123,7 +126,7 @@ section.contact
         font-family:$genath_regular;
         font-size:rem(26);
         font-weight:normal;
-        margin-top:rem(5);
+        margin-top:rem(14);
         margin-bottom:0;
         display: block;
         float:left;
