@@ -45,7 +45,6 @@ section#contact
           float:right;
           font-style: normal;
         }
-
       }
     }
 
@@ -80,7 +79,6 @@ section#contact
         padding-top: 0;
       }
     }
-
   } 
   #mission-statement
   {
@@ -109,7 +107,6 @@ section#contact
       font-size:rem(18);
       height:rem(40);
       width:100%;
-      //margin-top: rem(15);
       float:right;
       margin-bottom:rem(10);
     }    
@@ -121,16 +118,21 @@ section#contact
   background-color:$transparent_white;
   padding:rem(20);
   margin-bottom:rem(30);
+    a
+    {
+      text-decoration:none;
+      color: $black;
+    }
     h4
-      {
-        font-family:$genath_regular;
-        font-size:rem(26);
-        font-weight:normal;
-        margin-top:rem(14);
-        margin-bottom:0;
-        display: block;
-        float:left;
-      }
+    {
+      font-family:$genath_regular;
+      font-size:rem(26);
+      font-weight:normal;
+      margin-top:rem(14);
+      margin-bottom:0;
+      display: block;
+      float:left;
+    }
     img
     {
       width:rem(50);

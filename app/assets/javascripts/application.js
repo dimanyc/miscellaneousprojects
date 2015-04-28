@@ -17,9 +17,10 @@
 
 $(document).ready (function(){
   
-  $( '#contact-form,#contact-form h2,#contact-form span,#contact-form form,footer ul,footer input' ).css('visibility', 'hidden');
+  // sequntial animation for the contact-us form 
+  $( '#contact-form,#contact-form h2,#contact-form span,#contact-form form' ).css('visibility', 'hidden');
 
-  $( "#work-with-us" ).click(function() {
+  $( "#work-with-us,#work-with-us-footer" ).click(function() {
     $( "#contact-form:not(#contact-form h2)" ).css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0},500);
     $( "#contact-form h2" ).css({opacity: 0.0, visibility: "visible"}).delay(500).animate({opacity: 1.0},500);
     $( "#contact-form span").each(function(i){
@@ -29,29 +30,20 @@ $(document).ready (function(){
 
   });
 
-  $(window).scroll(function() {
-    var height = $(window).scrollTop();
+  // smooth scroll 
+  $('a').click(function(){
+      $('html, body').animate({
+          scrollTop: $( $.attr(this, 'href') ).offset().top
+      }, 500);
+      return false;
+  });
 
-    if(height  > 1) {
-      $( 'footer ul, footer input[type="button"]' ).css({opacity: 0.0, visibility: "visible"}).delay(0).animate({opacity: 1.0},500);
-    } else {
-    $('footer ul, footer input[type="button"]').css({opacity: 1, visibility: "visible"}).animate({opacity: 0},500);
-    }
-    });
+  // footer animation on scroll
 
-
-    $('a[href^="#"]').on('click',function (e) {
-        e.preventDefault();
-
-        var target = this.hash;
-        var $target = $(target);
-
-        $('html, body').stop().animate({
-            'scrollTop': $target.offset().top
-        }, 900, 'swing', function () {
-            window.location.hash = target;
-        });
-    });
-
+  // parallax
+  $('#contact').parallax({
+    speed : 0.15
+  });
 
 });
+

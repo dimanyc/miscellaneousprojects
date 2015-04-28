@@ -138,10 +138,7 @@ footer
         margin-right:11px;
       }
     }
-    li:not(first-child)
-    {
-      margin-left:11px;
-    }
+    li:not(first-child){margin-left:11px;}
   }
 
   span
@@ -152,15 +149,18 @@ footer
     color: $light_grey;
     font-size:$geneath_light_font_size;
     margin-top: 10px;
-    a
+
+    a:not(.btn)
     {
       text-decoration: none;
       color: $light_grey;
       display: block;
       margin-bottom: 5px;
+
     }
+
   }
-  input[type="button"]
+  input[type="button"], a.btn
   {
     background-color: $black;
     border:0;
@@ -172,9 +172,13 @@ footer
     margin-top: 11px;
     float:right;
     margin-right:30px;
+    text-decoration: none;
+    text-align: center;
+    padding-top:10px;
   }
 }
 
 // Positioning 
 .wrapper{@include outer-container;display:table;width: 100%;margin-top: rem(6);}
 h1,h2{font-family: $genath_regular;font-weight:normal;font-size: rem(48);line-height: rem(40);}
+
