@@ -12,13 +12,14 @@ section.about
   #laura-coombs,
   #robert-lee-brackett
   {
-    min-height: rem(362);
+    min-height: rem(355);
     @include span-columns(6);
     font-size:$gill_light_font_size;
     line-height: rem(19);
+
     color: $black;
     background-color: $transparent_white;
-    padding: rem(0) rem(20) rem(0) rem(20);
+    padding: rem(0) rem(22) rem(0) rem(22);
     font-family: $gill_light;
 
     h2

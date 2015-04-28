@@ -17,7 +17,7 @@
 
 $(document).ready (function(){
   
-  $( '#contact-form,#contact-form h2,#contact-form span,#contact-form form,footer ul,footer input[type="button"]' ).css('visibility', 'hidden');
+  $( '#contact-form,#contact-form h2,#contact-form span,#contact-form form,footer ul,footer input' ).css('visibility', 'hidden');
 
   $( "#work-with-us" ).click(function() {
     $( "#contact-form:not(#contact-form h2)" ).css({opacity: 0.0, visibility: "visible"}).animate({opacity: 1.0},500);
@@ -32,9 +32,11 @@ $(document).ready (function(){
   $(window).scroll(function() {
     var height = $(window).scrollTop();
 
-    if(height  > 900) {
+    if(height  > 1) {
       $( 'footer ul, footer input[type="button"]' ).css({opacity: 0.0, visibility: "visible"}).delay(0).animate({opacity: 1.0},500);
     } else {
     $('footer ul, footer input[type="button"]').css({opacity: 1, visibility: "visible"}).animate({opacity: 0},500);
     }
+    });
+
 });

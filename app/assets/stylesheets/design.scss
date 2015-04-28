@@ -2,7 +2,8 @@ section.design
 {
   top:rem(1860);
   background-image:image-url("arnica-background-1.jpg");
-  padding-top:rem(193);
+  padding-top:rem(156);
+  height: rem(840);
   @include span-columns(12);
   a{text-decoration: none;color:$black;@include span-columns(6);min-height:215px;margin-top: rem(65);}
   a:nth-child(1),a:nth-child(2){margin-bottom: rem(10);}
@@ -12,7 +13,7 @@ section.design
   {
     margin-top: -66px;
     padding-left:20px;
-    padding-top:16px;
+    padding-top:rem(12);
     padding-bottom:14px;
     background-color: $transparent_white;
     font-size:27px;
