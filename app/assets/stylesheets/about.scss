@@ -89,8 +89,5 @@ section#about
     ul li, ul li:nth-child(4){margin-right: rem(10);}
     ul li:nth-child(5){margin-right:0;}
   }
-
-
   #laura-and-robert{@include omega();}    
-
 }
