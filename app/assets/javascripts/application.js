@@ -39,6 +39,16 @@ $(document).ready (function(){
   });
 
   // footer animation on scroll
+  var lastScrollTop = 0;
+    $(window).scroll(function(event){
+       var st = $(this).scrollTop();
+       if (st > lastScrollTop){
+       $("footer").fadeIn('fast');
+       } else {
+       $("footer").fadeOut('fast');
+       }
+       lastScrollTop = st;
+   });  
 
   // parallax
   $('#contact').parallax({
