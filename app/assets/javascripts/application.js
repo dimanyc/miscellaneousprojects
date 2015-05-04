@@ -39,21 +39,23 @@ $(document).ready (function(){
   });
 
   // footer animation on scroll
-  var lastScrollTop = 0;
-    $(window).scroll(function(event){
-       var st = $(this).scrollTop();
-       if (st > lastScrollTop){
-       $("footer").fadeIn('fast');
-       } else {
-       $("footer").fadeOut('fast');
-       }
-       lastScrollTop = st;
-   });  
+  $(window).scroll(function(){
+    if($(document).scrollTop() > 500)
+    {
+      $('footer').fadeIn(500);
+    }
+    else
+    {
+      $('footer').fadeOut(500);
+    }
+  }); 
 
   // parallax
   $('#contact').parallax({
-    speed : 0.15
+    speed : 0.25
   });
 
-});
+  // smoothing the page scroll
+  $("html").niceScroll();
 
+});
